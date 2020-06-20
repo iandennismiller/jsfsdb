@@ -1,0 +1,11 @@
+mr.bob
+sphinx
+GitPython
+alabaster
+tox
+nose
+watchdog
+coverage
+ipython
+nosexcover
+twine

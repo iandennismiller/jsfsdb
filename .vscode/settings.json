@@ -1,0 +1,4 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}/docs",
+    "python.pythonPath": "/Users/idm/.virtualenvs/jsfsdb/bin/python"
+}

@@ -1,0 +1,8 @@
+language: python
+cache: pip
+python:
+  - 3.7
+install:
+  - make develop install
+script:
+  - make coverage

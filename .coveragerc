@@ -1,0 +1,6 @@
+[run]
+source = jsfsdb
+[report]
+omit =
+    */python?.?/*
+    */site-packages/nose/*
