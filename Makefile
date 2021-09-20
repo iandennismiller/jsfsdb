@@ -10,6 +10,10 @@ install:
 requirements:
 	pip install -r requirements.txt
 
+requirements-dev:
+	pip install -r requirements.txt
+	pip install twine
+
 develop:
 	pip install -r .requirements-dev.txt
 
@@ -40,4 +44,4 @@ release: clean
 coverage:
 	nosetests --with-xcoverage --cover-package=$(MOD_NAME) --cover-tests -c etc/tests.cfg
 
-.PHONY: clean install test watch docs release tox develop homebrew coverage requirements
+.PHONY: clean install test watch docs release tox develop homebrew coverage requirements requirements-dev
