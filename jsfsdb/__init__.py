@@ -52,7 +52,7 @@ class jsfsdb:
         collection_path = self.dbpath.joinpath(collection)
         arr = []
         all_files = glob.glob(str(collection_path.joinpath("*.json")))
-        for name in sorted(all_files, key=lambda x: int(os.path.splitext(os.path.basename(x))[0])):
+        for name in sorted(all_files, key=lambda x: str(os.path.splitext(os.path.basename(x))[0])):
             with open(name, "r") as f:
                 d = json.load(f)
                 arr.append(d)
